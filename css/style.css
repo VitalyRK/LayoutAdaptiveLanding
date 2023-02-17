@@ -698,6 +698,18 @@ ul {
   .buy__list-item {
     text-align: left;
   }
+  .gallery__max {
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: auto auto auto;
+  }
+  .gallery__max-img {
+    width: 100%;
+    align-self: stretch;
+  }
+  .footer__gallery-item {
+    width: 100%;
+    align-self: stretch;
+  }
 }
 
 @media (max-width: 1175px) {
@@ -708,7 +720,7 @@ ul {
     width: 100%;
   }
   .gallery__min {
-    margin: 0 auto;
+    margin: 0 auto 30px;
   }
 }
 
@@ -751,6 +763,44 @@ ul {
   .gallery__box {
     gap: 30px;
     margin-top: 50px;
+  }
+  .gallery__max-text {
+    border-radius: 0px 0px 0px 100px;
+  }
+  .footer__top {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .logo__footer {
+    align-self: center;
+    order: -1;
+    margin-bottom: 50px;
+    margin-right: 50px;
+  }
+  .footer__gallery {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+  .footer__menu-list {
+    display: block;
+    text-align: center;
+  }
+  .footer__menu-item {
+    padding: 15px 0;
+  }
+  .footer__social-title {
+    text-align: center;
+  }
+}
+
+@media (max-width: 820px) {
+  .gallery__max-text {
+    font-size: 18px;
+    line-height: 20px;
+  }
+  .footer {
+    padding-bottom: 40px;
   }
 }
 
@@ -795,6 +845,16 @@ ul {
   .gallery__min::before {
     display: none;
   }
+  .gallery__max-text {
+    border-radius: 0px 0px 0px 30px;
+  }
+  .logo__footer {
+    font-size: 60px;
+    margin-right: 30px;
+  }
+  .footer__form {
+    width: 400px;
+  }
 }
 
 @media (max-width: 500px) {
@@ -803,6 +863,9 @@ ul {
   }
   .buy__price-text {
     font-size: 25px;
+  }
+  .gallery__max {
+    gap: 10px;
   }
 }
 
@@ -816,9 +879,17 @@ ul {
   .info__play {
     right: 33%;
   }
+  .footer__title,
   .technology__title {
     font-size: 32px;
     line-height: 36px;
+  }
+  .logo__footer {
+    font-size: 50px;
+    margin-right: 20px;
+  }
+  .footer__form {
+    width: 300px;
   }
 }
 
